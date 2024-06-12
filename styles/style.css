@@ -1,0 +1,11 @@
+@import './reset.css';
+@import './fonts.css';
+@import './base.css';
+
+.main {
+    background-image: url("../images/main/main_fon.jpg");
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
