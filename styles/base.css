@@ -1,8 +1,12 @@
-* {
-   font-family: "Gilroy";
+body {
+    font-family: "Gilroy";
 }
 
-/*.container {
- max-width:1100px;
- margin:0 auto;
-}*/
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section_bg {
+    background-color: #f5f6fa;
+}
