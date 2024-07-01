@@ -9,31 +9,31 @@
     background-position: center;
 }
 
-.header_logo_text {
+.advertisement__inner-logo-description {
     font-size: 9px;
     font-weight: 400;
     line-height: 10px;
     color: #909195;
 }
 
-.rating_icon_text {
+.rating__value {
     font-size: 20px;
     font-weight: 600;
     color: #ffffff;
 }
 
-.rating_info_text {
+.rating__info-text {
     font-size: 12px;
     font-weight: 400;
     line-height: 13px;
     color: #ffffff;
 }
 
-.rating_info_text span {
+.google-rating__mark {
     font-weight: 600;
 }
 
-.button_header {
+.calculation-button {
     font-size: 12px;
     font-weight: 600;
     color: #ffffff;
@@ -41,30 +41,32 @@
     border-radius: 4px;
 }
 
-.header_button_link {
+.advertisement__inner-email {
     font-size: 11px;
     font-weight: 600;
     color: #96989f;
+    text-decoration: underline;
 }
 
-.online_text {
+.advertisement__inner-online-text {
     font-size: 10px;
     font-weight: 400;
     color: #d2d3d6;
 }
 
-.shedule {
+.advertisement__inner-shedule {
     font-size: 10px;
     font-weight: 400;
     color: #d2d3d6;
 }
 
-.tel_number {
+.advertisement__inner-phone-number {
     font-weight: 600;
     color: #ffffff;
+    font-size: 16px;
 }
 
-.tel_link {
+.advertisement__inner-ordering {
     font-size: 12px;
     font-weight: 600;
     color: #87bf3c;
@@ -78,7 +80,7 @@
     text-transform: uppercase;
 }
 
-.header__navigation-link.bordered {
+.header__navigation-link.navigation-mark-link {
     border: 1px solid #e1a43b;
     border-radius: 14px;
 }
@@ -86,12 +88,12 @@
 .main-inner__title {
     font-size: 48px;
     color: #ffffff;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 52px;
 }
 
-.main-inner__title span {
-    font-weight: 400;
+.main-inner__title.title .title__mark {
+    font-weight: 700;
 }
 
 .main-inner__description {
@@ -101,7 +103,7 @@
     color: #ffffff;
 }
 
-.main-inner__description span {
+.main-inner__description .main-inner__description-mark {
     font-weight: 700;
 }
 
@@ -120,7 +122,7 @@
     line-height: 14px;
 }
 
-.type_building_container {
+.calculation__wrapper {
     display: flex;
     justify-content: space-between;
     background-color: #ffffff;
@@ -133,50 +135,50 @@
     border-radius: 60px 0px 99px 0px;
 }
 
-.type_building_header {
+.section-calculation__title {
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 36px;
     text-align: center;
     color: #2d2d2f;
 }
 
-.type_building_header span {
-    font-weight: 400;
+.section-calculation__title .title__mark {
+    font-weight: 700;
 }
 
-.building_header {
+.calculation__inner-subtitle {
     font-size: 25px;
     font-weight: 600;
     color: #262425;
 }
 
-.building_header span {
+.calculation__inner-subtitle .subtitle__mark {
     font-size: 20px;
     font-weight: 300;
     color: #716a6b;
     background-color: #eff3f7;
 }
 
-.type_building_name {
+.calculation__inner-figcaption {
     font-size: 18px;
     font-weight: 600;
     text-align: center;
     color: #555050;
 }
 
-.type_building_help {
+.tip__text {
     font-size: 10px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 14px;
     color: #777779;
 }
 
-.type_building_help span {
-    font-weight: 400;
+.tip__text .tip__text-mark {
+    font-weight: 600;
 }
 
-.type_building_button {
+.calculation__inner-button {
     font-size: 14px;
     font-weight: 600;
     color: #fdfdfa;
@@ -184,74 +186,74 @@
     border-radius: 2px;
 }
 
-.architect_name {
+.calculation__architect-name {
     font-size: 25px;
     font-weight: 600;
     color: #272627;
 }
 
-.architect_post {
+.calculation__architect-post {
     font-size: 13px;
     font-weight: 400;
     color: #a09ea1;
 }
 
-.architect_question {
+.calculation__architect-subtitle {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     color: #4b4747;
 }
 
-.architect_question span {
-    font-weight: 400;
+.calculation__architect-subtitle .subtitle__mark {
+    font-weight: 600;
 }
 
-.architect_advantages {
+.architect-advantages__text {
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 14px;
     color: black;
 }
 
-.architect_advantages.architect_advantages_color {
+.architect-advantages__text.architect-advantages_color_black {
     color: #4b4747;
 }
 
-.architect_advantages span {
-    font-weight: 400;
+.architect-advantages__text-mark {
+    font-weight: 600;
 }
 
-.advantages_number {
+.architect-advantages__text-number {
     font-size: 41px;
     font-weight: 700;
     color: #f5ba41;
 }
 
-.advantages_number sup {
+.architect-advantages__text-number .architect-advantages__text-percent {
     font-size: 22px;
     font-weight: 500;
 }
 
-.construction_header {
+.section-house__title {
     font-size: 47px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 47px;
     text-align: center;
     color: #2d2d2f;
 }
 
-.construction_header span {
-    font-weight: 400;
+.section-house__title .title__mark {
+    font-weight: 700;
 }
 
-.header_big_construction_text {
+.card-header__title {
     font-size: 29px;
     font-weight: 700;
     line-height: 29px;
     color: black;
 }
 
-.construction_button {
+.card-header__button {
     font-size: 9px;
     font-weight: 600;
     color: #000000;
@@ -260,67 +262,61 @@
     text-transform: lowercase;
 }
 
-.header_small_construction_text {
+.card-header__title.card-header__title_small {
     font-size: 23px;
     font-weight: 700;
     line-height: 22px;
     color: black;
 }
 
-.big_construction_price,
-.small_construction_price {
+.card-footer__text {
     font-size: 13px;
     font-weight: 400;
     color: black;
     text-transform: lowercase;
 }
 
-.big_construction_price span {
+.card-footer__price {
     font-size: 29px;
     font-weight: 700;
 }
 
-.small_construction_price span {
+.card-footer__price.card-footer__price_small {
     font-size: 23px;
-    font-weight: 700;
 }
 
-.big_construction_green_button,
-.small_construction_green_button {
+.card-footer__button {
     font-size: 10px;
     font-weight: 700;
     color: #fcfcfe;
     background-color: #73b918;
     text-transform: uppercase;
-}
-
-.small_construction_green_button {
-    border-radius: 3px;
-}
-
-.big_construction_green_button {
     border-radius: 4px;
 }
 
-.project_container {
+.card-footer__button.card-footer__button_small {
+    border-radius: 3px;
+}
+
+.project__inner {
     display: flex;
     flex-wrap: wrap;
     gap: 24px 25px;
 }
 
-.project_card {
+.project__inner-card {
     background-color: #ffffff;
     border-radius: 13px;
 }
 
-.project_header {
+.section-project__title {
     font-size: 47px;
     font-weight: 700;
     color: #2d2d2f;
     text-align: center;
 }
 
-.project_nav {
+.project-navigation__link {
     font-size: 13px;
     font-weight: 400;
     color: #5c5f66;
@@ -328,7 +324,7 @@
     border-radius: 3px;
 }
 
-.project_nav_selected {
+.project-navigation__link.project-navigation__link_selected {
     font-size: 13px;
     font-weight: 400;
     color: #ffffff;
@@ -336,59 +332,59 @@
     border-radius: 3px;
 }
 
-.project_link {
+.project-navigation__more {
     font-size: 13px;
     font-weight: 600;
     color: #f7d047;
     border-bottom: 1px dashed #f7d047;
 }
 
-.project_card_header {
+.project-card__title {
     font-size: 29px;
     font-weight: 700;
     color: #000000;
 }
 
-.project_card_info {
+.project-card__list {
     font-size: 13px;
     font-weight: 400;
     line-height: 13px;
     color: #7a7d81;
 }
 
-.project_card_info span {
+.project-card__list .project-card__elem-mark {
     font-weight: 600;
 }
 
-.project_card_type {
+.project-card__house-type {
     font-size: 13px;
     font-weight: 600;
     color: #5c5f66;
 }
 
-.project_card_type span {
+.project-card__house-type .house-type__text {
     font-weight: 400;
     color: #7a7d81;
 }
 
-.project_card_price {
+.project-card__house-price {
     font-size: 13px;
     font-weight: 400;
     color: #7a7d81;
 }
 
-.project_card_price span.project_card_price_number {
+.project-card__house-price .house-price__text {
     font-weight: 600;
     color: #5c5f66;
 }
 
-.project_card_price span.project_card_price_number span {
+.project-card__house-price .house-price__text .house-price__value {
     font-size: 31px;
     font-weight: 700;
     color: #73b918;
 }
 
-.project_card_orange_button {
+.project-card__button {
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
@@ -397,25 +393,25 @@
     border-radius: 5px;
 }
 
-.project_card_advantage {
+.project-card__advantage {
     font-size: 9px;
     font-weight: 400;
     line-height: 8px;
     color: #b8b8ba;
 }
 
-.house_header {
+.section-stage__title {
     font-size: 47px;
     font-weight: 400;
     color: #2d2d2f;
     text-align: center;
 }
 
-.house_header span {
+.section-stage__title .title__mark {
     font-weight: 700;
 }
 
-.stage-list {
+.stage-navigation__list {
     font-size: 17px;
     font-weight: 600;
     color: #333438;
@@ -424,86 +420,86 @@
     justify-content: center;
 }
 
-.stage-list li {
+.stage-navigation__elem {
     background-color: #efefef;
     border-radius: 6px;
     text-align: center;
     padding: 14px 50px 14px 52px;
 }
 
-.stage-list .selected {
+.stage-navigation__elem.stage-navigation__elem_selected {
     color: #ffffff;
     background-color: #73b918;
 }
 
-.house_time {
+.stage-card__time {
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 400;
     color: #4c4f56;
 }
 
-.house_time span {
-    font-weight: 400;
+.stage-card__time .stage-card__time-mark {
+    font-weight: 600;
     color: #7a7d81;
 }
 
-.house_card_header {
+.stage-card__title {
     font-size: 35px;
     font-weight: 800;
     line-height: 36px;
     color: #4c4f56;
 }
 
-.house_card_list_element {
+.card-description__list-text {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 400;
     color: #4c4f56;
 }
 
-.house_card_list_element span {
-    font-weight: 400;
+.card-description__list-text .list-text__mark {
+    font-weight: 600;
 }
 
-.house_card_info_text {
+.card-description__info-text {
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
     color: #4c4f56;
 }
 
-.house_card_info_text span {
+.card-description__info-text .info-text__mark {
     font-weight: 700;
 }
 
-.gift_header {
+.section-gift__title {
     font-size: 47px;
-    font-weight: 700;
+    font-weight: 400;
     color: #2d2d2f;
     text-align: center;
 }
-.gift_header span {
-    font-weight: 400;
+.section-gift__title .title__mark {
+    font-weight: 700;
 }
 
-.gift_container_header {
+.gift-card__title {
     font-size: 27px;
     font-weight: 600;
     line-height: 26px;
     color: black;
 }
 
-.gift_card_text {
+.gift-card__text {
     font-size: 14px;
     font-weight: 400;
     line-height: 14px;
     color: black;
 }
 
-.gift_card_text span {
+.gift-card__text-mark {
     font-weight: 600;
 }
 
-.gift_button {
+.gift-card__button {
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -512,100 +508,102 @@
     border-radius: 5px;
 }
 
-.gift_percent {
+.gift-card__discount {
     font-size: 10px;
     font-weight: 400;
     text-transform: uppercase;
     color: black;
 }
 
-.gift_percent .gift_percent_number {
+.gift-card__discount .gift-card__discount-text {
     font-size: 34px;
     font-weight: 700;
 }
 
-.gift_percent .gift_percent_number span {
+.gift-card__discount .gift-card__discount-text .gift-card__percent {
     font-size: 13px;
 }
 
-.homes_header {
+.section-released__title {
     font-size: 47px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 47px;
     text-align: center;
     color: #2d2d2f;
 }
 
-.homes_header span {
-    font-weight: 400;
+.section-released__title .title__mark {
+    font-weight: 700;
 }
 
-.homes_images_button {
+.gallery__image-button {
     font-size: 11px;
-    font-weight: 700;
+    font-weight: 400;
     text-align: center;
     color: #333438;
     background-color: #ffffff;
     border-radius: 12px;
 }
 
-.homes_images_button span {
-    font-weight: 400;
+.gallery__image-button .image-button__text-mark {
+    font-weight: 700;
 }
 
-.home_info_link {
+.released-description__location-link {
     font-size: 18px;
     font-weight: 400;
     color: #85b73e;
     border-bottom: 1px dashed #85b93c;
 }
 
-.home_info_header {
+.released-description__title {
     font-size: 36px;
     font-weight: 600;
     line-height: 36px;
     color: #4c4f56;
 }
 
-.home_info_list-1 {
+.released__inner-features {
     font-size: 12px;
     font-weight: 400;
     color: #8e9093;
 }
 
-.home_info_list-1 .home_info_number {
-    font-size: 28px;
-    font-weight: 700;
+.released__inner-features .features-list__elem-value {
+    font-size: 16px;
+    font-weight: 400;
     color: #434749;
 }
 
-.home_info_list-1 .home_info_number span {
-    font-size: 16px;
-    font-weight: 400;
+.released__inner-features
+    .features-list__elem-value
+    .features-list__elem-value-mark {
+    font-size: 28px;
+    font-weight: 700;
 }
 
-.home_info_list-2 {
+.released__inner-info {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 400;
     color: #56595f;
 }
 
-.home_info_list-2 span {
-    font-weight: 400;
+.released__inner-info .info-list__elem-text-mark {
+    font-weight: 600;
 }
 
-.home_info_help {
+.released__inner-tip {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 18px;
     color: #56595f;
 }
 
-.home_info_help span {
-    font-weight: 400;
+.released__inner-tip .released__inner-tip-mark {
+    font-weight: 600;
 }
 
-.home_info_button {
+.released__inner-button {
     font-size: 13px;
     font-weight: 700;
     color: #fcfcfe;
@@ -613,46 +611,46 @@
     border-radius: 5px;
 }
 
-.excursion_container {
+.excursion__wrapper {
     border: 10px solid #ffffff;
     border-radius: 118px 0px 106px 0px;
 }
-.excursion_header {
+.section-excursion__title {
     font-size: 36px;
     font-weight: 400;
     line-height: 37px;
     color: #2d2d2f;
 }
 
-.excursion_header span {
+.section-excursion__title .title__mark {
     font-weight: 700;
 }
 
-.excursion_advantage_header {
+.section-excursion__subtitle {
     font-size: 18px;
     font-weight: 400;
     line-height: 20px;
     color: #4c4f56;
 }
 
-.excursion_advantage {
+.excursion-advantages__text {
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 14px;
     color: #000000;
 }
 
-.excursion_advantage span {
-    font-weight: 400;
+.excursion-advantages__text .excursion-advantages__text-mark {
+    font-weight: 700;
 }
 
-.excursion_form label {
+.excursion-form .excursion-form__label {
     font-size: 12px;
     font-weight: 300;
     color: #413e3f;
 }
 
-.excursion_button {
+.excursion-form__button {
     font-size: 13px;
     font-weight: 700;
     color: #fcfcfe;
@@ -660,52 +658,52 @@
     border-radius: 3px;
 }
 
-.excursion_conf {
+.section-excursion__conf {
     font-size: 9px;
     font-weight: 300;
     line-height: 10px;
     color: #413e3f;
 }
 
-.excursion_conf a {
+.section-excursion__conf .excursion-conf__link {
     font-weight: 600;
     text-decoration: underline;
     color: #413e3f;
 }
 
-.catalog_container {
+.catalog__wrapper {
     display: flex;
 }
 
-.form_catalog {
-    background-color: #ffffff;
-    border-radius: 8px;
-}
-
-.catalog_header {
+.section-catalog__title {
     font-size: 47px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 50px;
     color: #2d2d2f;
 }
 
-.catalog_header span {
-    font-weight: 400;
+.section-catalog__title .title__mark {
+    font-weight: 700;
 }
 
-.form_catalog_header {
+.section-catalog__card {
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.catalog-card__title {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 300;
     line-height: 27px;
     color: #4c4f56;
     text-align: center;
 }
 
-.form_catalog_header span {
-    font-weight: 300;
+.catalog-card__title .catalog-card__title-mark {
+    font-weight: 700;
 }
 
-.form_catalog_small_header {
+.catalog-card__description {
     font-size: 16px;
     font-weight: 400;
     line-height: 17px;
@@ -713,24 +711,24 @@
     color: #4c4f56;
 }
 
-.catalog_send {
+.catalog-card__description-mark {
     font-size: 13px;
     font-weight: 700;
     text-align: center;
     color: #2d2d2f;
 }
 
-.catalog_form label {
+.catalog-form .catalog-form__label {
     font-size: 13px;
     font-weight: 400;
     color: #706f75;
 }
 
-.catalog_form label.selected {
+.catalog-form .catalog-form__label.catalog-form__label_selected {
     font-weight: 700;
 }
 
-.catalog_button {
+.catalog-form__button {
     font-size: 13px;
     font-weight: 700;
     color: #fcfcfe;
@@ -738,141 +736,147 @@
     border-radius: 6px;
 }
 
-.catalog_conf {
+.section-catalog__conf {
     font-size: 9px;
     font-weight: 300;
     line-height: 10px;
     color: #413e3f;
 }
-.catalog_conf a {
+.section-catalog__conf .catalog-conf__link {
     font-weight: 600;
     text-decoration: underline;
     color: #413e3f;
 }
 
-.review_card_container {
-    display: flex;
-    gap: 31px;
-}
-
-.review_card_container > img {
-    height: max-content;
-}
-
-.review_card {
-    background-color: #ffffff;
-    border-radius: 13px;
-}
-
-.review_header {
+.section-review__title {
     font-size: 47px;
     font-weight: 700;
     color: #2d2d2f;
     text-align: center;
 }
 
-.review_header span {
+.section-review__title .title__mark {
     font-weight: 400;
 }
 
-.review_card_header {
+.review-card__title {
     font-size: 20px;
     font-weight: 700;
     line-height: 20px;
     color: #363539;
 }
 
-.review_card_data {
+.review__inner {
+    display: flex;
+    align-items: center;
+    gap: 31px;
+}
+
+.review__inner > .review__inner-arrow {
+    height: max-content;
+}
+
+.review__inner-card {
+    background-color: #ffffff;
+    border-radius: 13px;
+}
+
+.review-card__date {
     font-size: 13px;
     font-weight: 400;
     color: #6d7176;
 }
 
-.review_card_info {
+.review-card__description {
     font-size: 13px;
     font-weight: 400;
     line-height: 18px;
     color: #000000;
 }
 
-.review_card_info a {
+.review-card__description .review-card__description-link {
     font-weight: 500;
     color: #f3b43f;
     text-decoration: underline;
 }
 
-.director_header {
+.director-card__title {
     font-size: 47px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 47px;
     color: #2d2d2f;
 }
 
-.director_header span {
-    font-weight: 400;
+.director-card__title .director-card__title-mark {
+    font-weight: 700;
 }
 
-.director_info_text {
+.director-card__description {
     font-size: 14px;
     font-weight: 400;
     line-height: 20px;
     color: #6f7276;
 }
 
-.director_list li {
+.director-card__advantages .director-advantages__elem {
     font-size: 18px;
     font-weight: 400;
     line-height: 19px;
     color: #434749;
 }
 
-.director_list li .director_advantage {
+.director-card__advantages
+    .director-advantages__elem
+    .director-advantages__elem-value {
     font-size: 18px;
     font-weight: 400;
     line-height: 48px;
     color: #434749;
 }
 
-.director_list li .director_advantage span {
+.director-card__advantages
+    .director-advantages__elem
+    .director-advantages__elem-value
+    .director-advantages__elem-value-mark {
     font-size: 46px;
     font-weight: 700;
     color: #262425;
 }
 
-.question_container {
+.question__wrapper {
     display: flex;
     justify-content: space-between;
 }
 
-.question_header {
+.section-question__title {
     font-size: 47px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 47px;
     color: #2d2d2f;
 }
 
-.question_header span {
-    font-weight: 400;
+.section-question__title .title__mark {
+    font-weight: 700;
 }
 
-.question_info {
+.section-question__description {
     font-size: 11px;
     font-weight: 400;
     line-height: 15px;
     color: #565962;
 }
 
-.question_info span {
+.section-question__description .section-question__description-mark {
     font-weight: 600;
 }
 
-.question_list {
+.question-card__list {
     display: flex;
     flex-direction: column;
     gap: 9px;
 }
 
-.question_element {
+.question__text {
     font-size: 15px;
     font-weight: 700;
     color: #585b63;
@@ -880,56 +884,56 @@
     border-radius: 3px;
 }
 
-.question_element.selected {
+.question__text.question__text_selected {
     color: #f5f6fa;
     background-color: #78af36;
 }
 
-.question_answer {
+.question__answer {
     font-size: 11px;
     font-weight: 400;
     line-height: 16px;
     color: #565962;
 }
 
-.question_answer span {
+.question__answer .question__answer-mark {
     font-weight: 600;
 }
 
-.outlay_container {
+.outlay__wrapper {
     background-color: #ffffff;
     border-radius: 111px 0px 84px 0px;
 }
 
-.outlay_header {
+.section-outlay__title {
     font-size: 35px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 38px;
     color: #2d2d2f;
 }
 
-.outlay_header span {
-    font-weight: 400;
+.section-outlay__title .title__mark {
+    font-weight: 700;
 }
 
-.outlay_small_header {
+.section-outlay__subtitle {
     font-size: 15px;
     font-weight: 700;
     color: #494b50;
 }
 
-.outlay_advantage {
+.advantages-elem__text {
     font-size: 11px;
     font-weight: 400;
     line-height: 13px;
     color: #494b50;
 }
 
-.outlay_advantage span {
+.advantages-elem__text .advantages-elem__text-mark {
     font-weight: 700;
 }
 
-.form_outlay_header {
+.outlay-card__title {
     font-size: 18px;
     font-weight: 700;
     line-height: 18px;
@@ -937,7 +941,7 @@
     color: #262425;
 }
 
-.form_outlay_info {
+.outlay-card__description {
     font-size: 13px;
     font-weight: 400;
     line-height: 14px;
@@ -945,24 +949,24 @@
     color: #4c4f56;
 }
 
-.form_outlay_question {
+.outlay-card__description-mark {
     font-size: 13px;
     font-weight: 700;
     text-align: center;
     color: #262425;
 }
 
-.outlay_form label {
+.outlay-form__label {
     font-size: 14px;
     font-weight: 400;
     color: #706f75;
 }
 
-.outlay_form label.selected {
+.outlay-form__label.outlay-form__label_selected {
     font-weight: 700;
 }
 
-.outlay_button {
+.outlay-form__button {
     font-size: 14px;
     font-weight: 700;
     color: #fcfcfe;
@@ -970,57 +974,57 @@
     border-radius: 6px;
 }
 
-.outlay_conf {
+.section-outlay__conf {
     font-size: 10px;
     font-weight: 300;
     line-height: 11px;
     color: #413e3f;
 }
 
-.outlay_conf a {
+.section-outlay__conf .outlay-conf__link {
     font-weight: 600;
     text-decoration: underline;
     color: #413e3f;
 }
 
-.contacts_left_header {
+.contacts-card__title {
     font-size: 20px;
     font-weight: 700;
     color: #000000;
 }
 
-.contacts_address {
+.contacts-card__address-text {
     font-size: 13px;
     font-weight: 400;
     color: #4c4c4d;
 }
 
-.contacts_shedule {
+.contacts-card__shedule-text {
     font-size: 10px;
     font-weight: 400;
     color: #605f60;
 }
 
-.contacts_tel {
+.contacts-card__phone {
     font-size: 24px;
     font-weight: 700;
     color: #363435;
 }
 
-.contacts_link {
+.contacts-card__ordering {
     font-size: 14px;
     font-weight: 700;
     color: #8cb746;
     border-bottom: 1px dashed #8cb746;
 }
 
-.contacts_write {
+.contacts-card__online-text {
     font-size: 13px;
     font-weight: 700;
     color: #363435;
 }
 
-.contacts_button {
+.contacts-card__button {
     font-size: 13px;
     font-weight: 700;
     color: #fcfcfe;
@@ -1028,10 +1032,14 @@
     border-radius: 2px;
 }
 
-.contacts_right_header {
+.contacts-map__title {
     font-size: 20px;
     font-weight: 700;
     color: #000000;
+}
+
+.footer {
+    background-color: #373739;
 }
 
 .footer__navigation-link {
@@ -1041,17 +1049,13 @@
     text-transform: uppercase;
 }
 
-.footer {
-    background-color: #373739;
-}
-
-.footer_conf {
+.footer__conf-copyright {
     font-size: 15px;
     font-weight: 500;
     color: #ffffff;
 }
 
-.footer_link {
+.footer__conf-link {
     font-size: 15px;
     font-weight: 500;
     color: #e5b53e;
