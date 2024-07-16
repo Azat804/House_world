@@ -1287,8 +1287,11 @@ gap: 0 5px;
     color: #FFFFFF;
     background-color: #4C4F5680;
     border-radius: 26px 0px 27px 0px;
-    padding: 16px 16px 20px 18px;
+    padding: 16px 16px 20px 16px;
     position:relative;
+    display: flex;
+flex-direction: column;
+    align-items:center;
 }
 
 .gift-card__point {
