@@ -2097,7 +2097,7 @@ body {
 .section-excursion__tree {
   position: absolute;
   top: -3%;
-  left: -6%;
+  left: -1%;
   z-index: -1;
 }
 @media screen and (max-width: 550px) {
@@ -2705,6 +2705,7 @@ body {
 }
 .section-outlay .outlay__wrapper .section-outlay__card {
   padding: 39px 54px 38px 54px;
+  z-index: 1;
 }
 @media screen and (max-width: 420px) {
   .section-outlay .outlay__wrapper .section-outlay__card {
@@ -2844,7 +2845,7 @@ body {
 .section-outlay__divider {
   position: absolute;
   bottom: -14%;
-  right: 1%;
+  right: 10%;
   z-index: 0;
 }
 @media screen and (max-width: 550px) {
