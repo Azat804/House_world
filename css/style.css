@@ -191,7 +191,6 @@ body {
   max-width: 1100px;
   margin: 0 auto;
   box-sizing: border-box;
-  /*height:100vh;*/
 }
 
 .section_bg {
@@ -835,8 +834,6 @@ body {
   gap: 0 3px;
 }
 .calculation__wrapper .calculation__architect {
-  /*height: 100%;*/
-  /*width: 350px;*/
   background-color: #f5f6fa;
   border-radius: 60px 0px 99px 0px;
   padding: 10px 45px 57px 44px;
@@ -1946,6 +1943,7 @@ body {
   z-index: 1;
 }
 .section-excursion .excursion__wrapper {
+  z-index: 1;
   background: url("../images/excursion/excursion_background.png") no-repeat center/cover;
   background-color: #ffffff;
   border: 10px solid #ffffff;
@@ -2108,8 +2106,8 @@ body {
 }
 .section-excursion__tree {
   position: absolute;
-  top: -28px;
-  left: -20px;
+  top: -3%;
+  left: -6%;
   z-index: -1;
 }
 @media screen and (max-width: 550px) {
@@ -2596,10 +2594,10 @@ body {
   color: #585b63;
   background-color: #efefef;
   border-radius: 3px;
-  padding: 13px 12px 13px 12px;
+  padding: 13px 58px 13px 12px;
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
   gap: 0 41px;
@@ -2610,7 +2608,7 @@ body {
   color: #f5f6fa;
   background-color: #78af36;
   border-radius: 3px;
-  padding: 13px 12px 13px 12px;
+  padding: 13px 58px 13px 12px;
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -2761,7 +2759,7 @@ body {
   align-items: center;
   flex-wrap: nowrap;
   gap: 7px 0;
-  padding: 12px 16px 8px 16px;
+  padding: 12px 11px 8px 11px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
@@ -2855,9 +2853,14 @@ body {
 }
 .section-outlay__divider {
   position: absolute;
-  bottom: -130px;
-  right: 60px;
+  bottom: -14%;
+  right: 1%;
   z-index: 0;
+}
+@media screen and (max-width: 550px) {
+  .section-outlay__divider {
+    bottom: -10%;
+  }
 }
 
 .section-contacts {
