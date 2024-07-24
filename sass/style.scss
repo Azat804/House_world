@@ -887,8 +887,6 @@
       @include flex($jc: center, $ai: center, $g2: 20px);
     }
 
-  
-
     .project-navigation__list {
       @include flex($ai: center, $g2: 9px);
       @media screen and (max-width: 550px) {
@@ -1250,7 +1248,13 @@
       }
 
       @media screen and (max-width: 420px) {
-        @include flex($jc: center, $ai: center, $fw: wrap, $g1: 20px, $g2: 10px);
+        @include flex(
+          $jc: center,
+          $ai: center,
+          $fw: wrap,
+          $g1: 20px,
+          $g2: 10px
+        );
       }
 
       .gift-card__discount {
@@ -1378,7 +1382,13 @@
         @include flex($ai: center, $g2: 11px);
 
         @media screen and (max-width: 550px) {
-          @include flex($jc: center, $ai: center, $fw: wrap, $g1: 11px, $g2: 11px);
+          @include flex(
+            $jc: center,
+            $ai: center,
+            $fw: wrap,
+            $g1: 11px,
+            $g2: 11px
+          );
         }
 
         .gallery__thumbnail {
@@ -1514,165 +1524,167 @@
 }
 
 .section-excursion {
-  position: relative;
   padding-top: 140px;
-  z-index: 1;
 
   .excursion__wrapper {
-    z-index: 1;
+    position: relative;
 
-    background: url("../images/excursion/excursion_background.png") no-repeat
-      center/cover;
-    background-color: #ffffff;
-    border: 10px solid #ffffff;
-    border-radius: 118px 0px 106px 0px;
-    padding: 62px 0 44px 74px;
-    box-sizing: border-box;
+    .section-excursion__inner {
+      position: relative;
+      z-index: 2;
+      background: url("../images/excursion/excursion_background.png") no-repeat
+        center/cover;
+      background-color: #ffffff;
+      border: 10px solid #ffffff;
+      border-radius: 118px 0px 106px 0px;
+      padding: 62px 0 44px 74px;
+      box-sizing: border-box;
 
-    @media screen and (max-width: 420px) {
-      padding: 62px 0 44px 37px;
-    }
-
-    .section-excursion__title {
-      font-size: clamp(25px, 4vw, 36px);
-      font-weight: 400;
-      line-height: 37px;
-      color: #2d2d2f;
-      margin-bottom: 24px;
-
-      .title__mark {
-        font-weight: 700;
-      }
-    }
-
-    .section-excursion__subtitle {
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 20px;
-      color: #4c4f56;
-      margin-bottom: 15px;
-    }
-
-    .section-excursion__advantages {
-      @include flex($g2: 26px);
-      margin-bottom: 25px;
-
-      @media screen and (max-width: 550px) {
-        @include flex($fw: wrap, $g1: 26px, $g2: 26px);
+      @media screen and (max-width: 420px) {
+        padding: 62px 0 44px 37px;
       }
 
-      .excursion-advantages__elem {
-        @include flex($g2: 13px);
+      .section-excursion__title {
+        font-size: clamp(25px, 4vw, 36px);
+        font-weight: 400;
+        line-height: 37px;
+        color: #2d2d2f;
+        margin-bottom: 24px;
 
-        .excursion-advantages__text {
-          font-size: 12px;
-          font-weight: 400;
-          line-height: 14px;
-          color: #000000;
-
-          &-mark {
-            font-weight: 700;
-          }
+        .title__mark {
+          font-weight: 700;
         }
       }
 
-      .excursion-advantages__elem:first-child {
-        margin-right: 21px;
-      }
-    }
-
-    .excursion-form {
-      @include flex($fw: wrap, $g1: 15px, $g2: 7px);
-      max-width: 426px;
-      margin-bottom: 9px;
-
-      &__date {
-        @include flex($fd: column, $g1: 5px);
+      .section-excursion__subtitle {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #4c4f56;
+        margin-bottom: 15px;
       }
 
-      &__label {
-        font-size: 12px;
+      .section-excursion__advantages {
+        @include flex($g2: 26px);
+        margin-bottom: 25px;
+
+        @media screen and (max-width: 550px) {
+          @include flex($fw: wrap, $g1: 26px, $g2: 26px);
+        }
+
+        .excursion-advantages__elem {
+          @include flex($g2: 13px);
+
+          .excursion-advantages__text {
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14px;
+            color: #000000;
+
+            &-mark {
+              font-weight: 700;
+            }
+          }
+        }
+
+        .excursion-advantages__elem:first-child {
+          margin-right: 21px;
+        }
+      }
+
+      .excursion-form {
+        @include flex($fw: wrap, $g1: 15px, $g2: 7px);
+        max-width: 426px;
+        margin-bottom: 9px;
+
+        &__date {
+          @include flex($fd: column, $g1: 5px);
+        }
+
+        &__label {
+          font-size: 12px;
+          font-weight: 300;
+          color: #413e3f;
+        }
+
+        &__input-date {
+          background-color: #efefef;
+          padding: 9px 13px 9px 20px;
+          border: none;
+          max-width: 223px;
+          box-sizing: border-box;
+          font-size: 17px;
+          font-weight: 300;
+          color: #413e3f;
+        }
+
+        &__input-date::-ms-value {
+          font-size: 17px;
+          font-weight: 300;
+          color: #413e3f;
+        }
+
+        &__input-date::-webkit-calendar-picker-indicator {
+          background: url("../images/excursion/calendar.png") no-repeat
+            center/cover;
+          width: 24px;
+          height: 24px;
+          margin-left: 50px;
+        }
+
+        &__input-tel {
+          background-color: #efefef;
+          padding: 13px 12px 13px 12px;
+          border: none;
+          box-sizing: border-box;
+          max-width: 196px;
+          font-size: 17px;
+          font-weight: 300;
+          color: #413e3f;
+        }
+
+        &__input-tel::placeholder {
+          font-size: 17px;
+          font-weight: 300;
+          color: #413e3f;
+        }
+
+        &__tel {
+          @include flex($fd: column, $g1: 5px);
+        }
+
+        &__button {
+          font-size: 13px;
+          font-weight: 700;
+          color: #fcfcfe;
+          background-color: #feaa01;
+          border-radius: 3px;
+          padding: 13px 28px;
+          cursor: pointer;
+        }
+      }
+      .section-excursion__conf {
+        font-size: 9px;
         font-weight: 300;
+        line-height: 10px;
         color: #413e3f;
-      }
 
-      &__input-date {
-        background-color: #efefef;
-        padding: 9px 13px 9px 20px;
-        border: none;
-        max-width: 223px;
-        box-sizing: border-box;
-        font-size: 17px;
-        font-weight: 300;
-        color: #413e3f;
-      }
-
-      &__input-date::-ms-value {
-        font-size: 17px;
-        font-weight: 300;
-        color: #413e3f;
-      }
-
-      &__input-date::-webkit-calendar-picker-indicator {
-        background: url("../images/excursion/calendar.png") no-repeat
-          center/cover;
-        width: 24px;
-        height: 24px;
-        margin-left: 50px;
-      }
-
-      &__input-tel {
-        background-color: #efefef;
-        padding: 13px 12px 13px 12px;
-        border: none;
-        box-sizing: border-box;
-        max-width: 196px;
-        font-size: 17px;
-        font-weight: 300;
-        color: #413e3f;
-      }
-
-      &__input-tel::placeholder {
-        font-size: 17px;
-        font-weight: 300;
-        color: #413e3f;
-      }
-
-      &__tel {
-        @include flex($fd: column, $g1: 5px);
-      }
-
-      &__button {
-        font-size: 13px;
-        font-weight: 700;
-        color: #fcfcfe;
-        background-color: #feaa01;
-        border-radius: 3px;
-        padding: 13px 28px;
-        cursor: pointer;
-      }
-    }
-    .section-excursion__conf {
-      font-size: 9px;
-      font-weight: 300;
-      line-height: 10px;
-      color: #413e3f;
-
-      .excursion-conf__link {
-        font-weight: 600;
-        text-decoration: underline;
-        color: #413e3f;
+        .excursion-conf__link {
+          font-weight: 600;
+          text-decoration: underline;
+          color: #413e3f;
+        }
       }
     }
   }
-
   &__tree {
     position: absolute;
-    top: -3%;
-    left: -1%;
-    z-index: -1;
+    top: -31%;
+    left: -12%;
     @media screen and (max-width: 550px) {
-      width: 100%;
+      top: -12%;
+      left: 1%;
+      width: 50%;
     }
   }
 }
@@ -1859,7 +1871,7 @@
     margin-bottom: 40px;
 
     @media screen and (max-width: 1250px) {
-      @include flex($jc: space-between, $ai: center, $g2: 21px);
+      @include flex($jc: space-between, $ai: center);
     }
 
     @media screen and (max-width: 1100px) {
@@ -2126,182 +2138,183 @@
 
 .section-outlay {
   padding-top: 156px;
-  position: relative;
-
   .outlay__wrapper {
-    @include flex($jc: space-between);
-    background-color: #ffffff;
-    border-radius: 111px 0px 84px 0px;
     position: relative;
-    z-index: 1;
 
-    @media screen and (max-width: 750px) {
-      @include flex($jc: center, $fw: wrap);
-    }
+    .section-outlay__inner {
+      @include flex($jc: space-between);
+      background-color: #ffffff;
+      border-radius: 111px 0px 84px 0px;
+      position: relative;
+      z-index: 2;
 
-    .section-outlay__description {
-      background: url("../images/outlay/outlay.png") no-repeat center/cover;
-      padding: 54px 10px 101px 81px;
-      width: 100%;
+      @media screen and (max-width: 750px) {
+        @include flex($jc: center, $fw: wrap);
+      }
 
-      .section-outlay__title {
-        font-size: clamp(25px, 4vw, 35px);
-        font-weight: 400;
-        line-height: 38px;
-        color: #2d2d2f;
-        margin-bottom: 34px;
+      .section-outlay__description {
+        background: url("../images/outlay/outlay.png") no-repeat center/cover;
+        padding: 54px 10px 101px 81px;
+        width: 100%;
 
-        .title__mark {
-          font-weight: 700;
+        .section-outlay__title {
+          font-size: clamp(25px, 4vw, 35px);
+          font-weight: 400;
+          line-height: 38px;
+          color: #2d2d2f;
+          margin-bottom: 34px;
+
+          .title__mark {
+            font-weight: 700;
+          }
         }
-      }
 
-      .section-outlay__subtitle {
-        font-size: 15px;
-        font-weight: 700;
-        color: #494b50;
-        margin-bottom: 23px;
-      }
+        .section-outlay__subtitle {
+          font-size: 15px;
+          font-weight: 700;
+          color: #494b50;
+          margin-bottom: 23px;
+        }
 
-      .section-outlay__advantages {
-        @include flex($fd: column, $g1: 9px);
+        .section-outlay__advantages {
+          @include flex($fd: column, $g1: 9px);
 
-        .advantages-list__elem {
-          @include flex($g2: 11px);
+          .advantages-list__elem {
+            @include flex($g2: 11px);
 
-          .advantages-elem__text {
-            font-size: 11px;
-            font-weight: 400;
-            line-height: 13px;
-            color: #494b50;
+            .advantages-elem__text {
+              font-size: 11px;
+              font-weight: 400;
+              line-height: 13px;
+              color: #494b50;
 
-            &-mark {
-              font-weight: 700;
+              &-mark {
+                font-weight: 700;
+              }
             }
           }
         }
       }
-    }
 
-    .section-outlay__card {
-      padding: 39px 54px 38px 54px;
-      z-index: 1;
+      .section-outlay__card {
+        padding: 39px 54px 38px 54px;
 
-      @media screen and (max-width: 420px) {
-        padding: 39px 24px 38px 24px;
-      }
+        @media screen and (max-width: 420px) {
+          padding: 39px 24px 38px 24px;
+        }
 
-      .outlay-card__title {
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 18px;
-        text-align: center;
-        color: #262425;
-        margin-bottom: 10px;
-      }
-
-      .outlay-card__description {
-        font-size: 13px;
-        font-weight: 400;
-        line-height: 14px;
-        text-align: center;
-        color: #4c4f56;
-        margin-bottom: 12px;
-      }
-
-      .outlay-form {
-        @include flex($fd: column, $ai: center, $g1: 10px);
-
-        .outlay-card__description-mark {
-          font-size: 13px;
+        .outlay-card__title {
+          font-size: 18px;
           font-weight: 700;
+          line-height: 18px;
           text-align: center;
           color: #262425;
-          margin-bottom: 4px;
+          margin-bottom: 10px;
         }
 
-        &__label {
-          @include flex($fd: column, $jc: center, $ai: center, $g1: 7px);
-          padding: 12px 11px 8px 11px;
-          cursor: pointer;
-          transition: all 0.5s ease-in-out;
-        }
-
-        &__input-radio {
-          display: none;
-        }
-
-        &__input-radio[type="radio"]:checked + .outlay-form__label {
-          box-shadow: 0px 4.1px 27.35px 0px #1c181f33;
-          border-radius: 5px;
-          font-weight: 700;
-        }
-
-        &__radio {
-          @include flex($g2: 9px);
-          margin-bottom: 15px;
-        }
-
-        &__label {
-          font-size: 14px;
+        .outlay-card__description {
+          font-size: 13px;
           font-weight: 400;
-          color: #706f75;
+          line-height: 14px;
+          text-align: center;
+          color: #4c4f56;
+          margin-bottom: 12px;
         }
 
-        &__input-file {
-          display: none;
-        }
+        .outlay-form {
+          @include flex($fd: column, $ai: center, $g1: 10px);
 
-        &__file-label {
-          @include flex($jc: end, $ai: center);
-          padding: 11px 12px 11px 229px;
-          border: 1px solid #7fb63c;
-          border-radius: 3px;
-          margin-bottom: 13px;
-          margin-bottom: 3px;
-        }
+          .outlay-card__description-mark {
+            font-size: 13px;
+            font-weight: 700;
+            text-align: center;
+            color: #262425;
+            margin-bottom: 4px;
+          }
 
-        &__input-tel {
-          background-color: #efefef;
-          border-radius: 5px;
-          padding: 12px 13px 6px 13px;
-          border: none;
-          box-sizing: border-box;
-          max-width: 259px;
-          font-size: 23px;
-          font-weight: 400;
-          color: #7a7d81;
-        }
+          &__label {
+            @include flex($fd: column, $jc: center, $ai: center, $g1: 7px);
+            padding: 12px 11px 8px 11px;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+          }
 
-        &__input-tel::placeholder {
-          font-size: 21px;
-          font-weight: 400;
-          color: #7a7d81;
-        }
+          &__input-radio {
+            display: none;
+          }
 
-        &__button {
-          font-size: 14px;
-          font-weight: 700;
-          color: #fcfcfe;
-          background-color: #feaa01;
-          border-radius: 6px;
-          padding: 13px 73px 13px 73px;
-          box-sizing: border-box;
-          margin-bottom: 2px;
-          cursor: pointer;
-        }
+          &__input-radio[type="radio"]:checked + .outlay-form__label {
+            box-shadow: 0px 4.1px 27.35px 0px #1c181f33;
+            border-radius: 5px;
+            font-weight: 700;
+          }
 
-        &__conf {
-          font-size: 10px;
-          font-weight: 300;
-          line-height: 11px;
-          color: #413e3f;
-          margin-right: 15px;
+          &__radio {
+            @include flex($g2: 9px);
+            margin-bottom: 15px;
+          }
 
-          .outlay-conf__link {
-            font-weight: 600;
-            text-decoration: underline;
+          &__label {
+            font-size: 14px;
+            font-weight: 400;
+            color: #706f75;
+          }
+
+          &__input-file {
+            display: none;
+          }
+
+          &__file-label {
+            @include flex($jc: end, $ai: center);
+            padding: 11px 12px 11px 229px;
+            border: 1px solid #7fb63c;
+            border-radius: 3px;
+            margin-bottom: 13px;
+            margin-bottom: 3px;
+          }
+
+          &__input-tel {
+            background-color: #efefef;
+            border-radius: 5px;
+            padding: 12px 13px 6px 13px;
+            border: none;
+            box-sizing: border-box;
+            max-width: 259px;
+            font-size: 23px;
+            font-weight: 400;
+            color: #7a7d81;
+          }
+
+          &__input-tel::placeholder {
+            font-size: 21px;
+            font-weight: 400;
+            color: #7a7d81;
+          }
+
+          &__button {
+            font-size: 14px;
+            font-weight: 700;
+            color: #fcfcfe;
+            background-color: #feaa01;
+            border-radius: 6px;
+            padding: 13px 73px 13px 73px;
+            box-sizing: border-box;
+            margin-bottom: 2px;
+            cursor: pointer;
+          }
+
+          &__conf {
+            font-size: 10px;
+            font-weight: 300;
+            line-height: 11px;
             color: #413e3f;
+            margin-right: 15px;
+
+            .outlay-conf__link {
+              font-weight: 600;
+              text-decoration: underline;
+              color: #413e3f;
+            }
           }
         }
       }
@@ -2312,15 +2325,16 @@
 
       top: -175px;
       left: -150px;
-      z-index: -1;
     }
   }
+
   &__divider {
     position: absolute;
-    bottom: -14%;
+    bottom: 0px;
+    right: 0px;
+    bottom: -20%;
     right: 10%;
-    z-index: 0;
-    @media screen and (max-width: 550px) {
+    @media screen and (max-width: 750px) {
       bottom: -10%;
     }
   }

@@ -1928,12 +1928,14 @@ body {
 }
 
 .section-excursion {
-  position: relative;
   padding-top: 140px;
-  z-index: 1;
 }
 .section-excursion .excursion__wrapper {
-  z-index: 1;
+  position: relative;
+}
+.section-excursion .excursion__wrapper .section-excursion__inner {
+  position: relative;
+  z-index: 2;
   background: url("../images/excursion/excursion_background.png") no-repeat center/cover;
   background-color: #ffffff;
   border: 10px solid #ffffff;
@@ -1942,28 +1944,28 @@ body {
   box-sizing: border-box;
 }
 @media screen and (max-width: 420px) {
-  .section-excursion .excursion__wrapper {
+  .section-excursion .excursion__wrapper .section-excursion__inner {
     padding: 62px 0 44px 37px;
   }
 }
-.section-excursion .excursion__wrapper .section-excursion__title {
+.section-excursion .excursion__wrapper .section-excursion__inner .section-excursion__title {
   font-size: clamp(25px, 4vw, 36px);
   font-weight: 400;
   line-height: 37px;
   color: #2d2d2f;
   margin-bottom: 24px;
 }
-.section-excursion .excursion__wrapper .section-excursion__title .title__mark {
+.section-excursion .excursion__wrapper .section-excursion__inner .section-excursion__title .title__mark {
   font-weight: 700;
 }
-.section-excursion .excursion__wrapper .section-excursion__subtitle {
+.section-excursion .excursion__wrapper .section-excursion__inner .section-excursion__subtitle {
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
   color: #4c4f56;
   margin-bottom: 15px;
 }
-.section-excursion .excursion__wrapper .section-excursion__advantages {
+.section-excursion .excursion__wrapper .section-excursion__inner .section-excursion__advantages {
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -1973,7 +1975,7 @@ body {
   margin-bottom: 25px;
 }
 @media screen and (max-width: 550px) {
-  .section-excursion .excursion__wrapper .section-excursion__advantages {
+  .section-excursion .excursion__wrapper .section-excursion__inner .section-excursion__advantages {
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -1982,7 +1984,7 @@ body {
     gap: 26px 26px;
   }
 }
-.section-excursion .excursion__wrapper .section-excursion__advantages .excursion-advantages__elem {
+.section-excursion .excursion__wrapper .section-excursion__inner .section-excursion__advantages .excursion-advantages__elem {
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -1990,19 +1992,19 @@ body {
   flex-wrap: nowrap;
   gap: 0 13px;
 }
-.section-excursion .excursion__wrapper .section-excursion__advantages .excursion-advantages__elem .excursion-advantages__text {
+.section-excursion .excursion__wrapper .section-excursion__inner .section-excursion__advantages .excursion-advantages__elem .excursion-advantages__text {
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
   color: #000000;
 }
-.section-excursion .excursion__wrapper .section-excursion__advantages .excursion-advantages__elem .excursion-advantages__text-mark {
+.section-excursion .excursion__wrapper .section-excursion__inner .section-excursion__advantages .excursion-advantages__elem .excursion-advantages__text-mark {
   font-weight: 700;
 }
-.section-excursion .excursion__wrapper .section-excursion__advantages .excursion-advantages__elem:first-child {
+.section-excursion .excursion__wrapper .section-excursion__inner .section-excursion__advantages .excursion-advantages__elem:first-child {
   margin-right: 21px;
 }
-.section-excursion .excursion__wrapper .excursion-form {
+.section-excursion .excursion__wrapper .section-excursion__inner .excursion-form {
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -2012,7 +2014,7 @@ body {
   max-width: 426px;
   margin-bottom: 9px;
 }
-.section-excursion .excursion__wrapper .excursion-form__date {
+.section-excursion .excursion__wrapper .section-excursion__inner .excursion-form__date {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -2020,12 +2022,12 @@ body {
   flex-wrap: nowrap;
   gap: 5px 0;
 }
-.section-excursion .excursion__wrapper .excursion-form__label {
+.section-excursion .excursion__wrapper .section-excursion__inner .excursion-form__label {
   font-size: 12px;
   font-weight: 300;
   color: #413e3f;
 }
-.section-excursion .excursion__wrapper .excursion-form__input-date {
+.section-excursion .excursion__wrapper .section-excursion__inner .excursion-form__input-date {
   background-color: #efefef;
   padding: 9px 13px 9px 20px;
   border: none;
@@ -2035,18 +2037,18 @@ body {
   font-weight: 300;
   color: #413e3f;
 }
-.section-excursion .excursion__wrapper .excursion-form__input-date::-ms-value {
+.section-excursion .excursion__wrapper .section-excursion__inner .excursion-form__input-date::-ms-value {
   font-size: 17px;
   font-weight: 300;
   color: #413e3f;
 }
-.section-excursion .excursion__wrapper .excursion-form__input-date::-webkit-calendar-picker-indicator {
+.section-excursion .excursion__wrapper .section-excursion__inner .excursion-form__input-date::-webkit-calendar-picker-indicator {
   background: url("../images/excursion/calendar.png") no-repeat center/cover;
   width: 24px;
   height: 24px;
   margin-left: 50px;
 }
-.section-excursion .excursion__wrapper .excursion-form__input-tel {
+.section-excursion .excursion__wrapper .section-excursion__inner .excursion-form__input-tel {
   background-color: #efefef;
   padding: 13px 12px 13px 12px;
   border: none;
@@ -2056,17 +2058,17 @@ body {
   font-weight: 300;
   color: #413e3f;
 }
-.section-excursion .excursion__wrapper .excursion-form__input-tel::-moz-placeholder {
+.section-excursion .excursion__wrapper .section-excursion__inner .excursion-form__input-tel::-moz-placeholder {
   font-size: 17px;
   font-weight: 300;
   color: #413e3f;
 }
-.section-excursion .excursion__wrapper .excursion-form__input-tel::placeholder {
+.section-excursion .excursion__wrapper .section-excursion__inner .excursion-form__input-tel::placeholder {
   font-size: 17px;
   font-weight: 300;
   color: #413e3f;
 }
-.section-excursion .excursion__wrapper .excursion-form__tel {
+.section-excursion .excursion__wrapper .section-excursion__inner .excursion-form__tel {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -2074,7 +2076,7 @@ body {
   flex-wrap: nowrap;
   gap: 5px 0;
 }
-.section-excursion .excursion__wrapper .excursion-form__button {
+.section-excursion .excursion__wrapper .section-excursion__inner .excursion-form__button {
   font-size: 13px;
   font-weight: 700;
   color: #fcfcfe;
@@ -2083,26 +2085,27 @@ body {
   padding: 13px 28px;
   cursor: pointer;
 }
-.section-excursion .excursion__wrapper .section-excursion__conf {
+.section-excursion .excursion__wrapper .section-excursion__inner .section-excursion__conf {
   font-size: 9px;
   font-weight: 300;
   line-height: 10px;
   color: #413e3f;
 }
-.section-excursion .excursion__wrapper .section-excursion__conf .excursion-conf__link {
+.section-excursion .excursion__wrapper .section-excursion__inner .section-excursion__conf .excursion-conf__link {
   font-weight: 600;
   text-decoration: underline;
   color: #413e3f;
 }
 .section-excursion__tree {
   position: absolute;
-  top: -3%;
-  left: -1%;
-  z-index: -1;
+  top: -31%;
+  left: -12%;
 }
 @media screen and (max-width: 550px) {
   .section-excursion__tree {
-    width: 100%;
+    top: -12%;
+    left: 1%;
+    width: 50%;
   }
 }
 
@@ -2318,7 +2321,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    gap: 0 21px;
+    gap: 0 0;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -2633,9 +2636,11 @@ body {
 
 .section-outlay {
   padding-top: 156px;
-  position: relative;
 }
 .section-outlay .outlay__wrapper {
+  position: relative;
+}
+.section-outlay .outlay__wrapper .section-outlay__inner {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -2645,10 +2650,10 @@ body {
   background-color: #ffffff;
   border-radius: 111px 0px 84px 0px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 @media screen and (max-width: 750px) {
-  .section-outlay .outlay__wrapper {
+  .section-outlay .outlay__wrapper .section-outlay__inner {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -2657,28 +2662,28 @@ body {
     gap: 0 0;
   }
 }
-.section-outlay .outlay__wrapper .section-outlay__description {
+.section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__description {
   background: url("../images/outlay/outlay.png") no-repeat center/cover;
   padding: 54px 10px 101px 81px;
   width: 100%;
 }
-.section-outlay .outlay__wrapper .section-outlay__description .section-outlay__title {
+.section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__description .section-outlay__title {
   font-size: clamp(25px, 4vw, 35px);
   font-weight: 400;
   line-height: 38px;
   color: #2d2d2f;
   margin-bottom: 34px;
 }
-.section-outlay .outlay__wrapper .section-outlay__description .section-outlay__title .title__mark {
+.section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__description .section-outlay__title .title__mark {
   font-weight: 700;
 }
-.section-outlay .outlay__wrapper .section-outlay__description .section-outlay__subtitle {
+.section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__description .section-outlay__subtitle {
   font-size: 15px;
   font-weight: 700;
   color: #494b50;
   margin-bottom: 23px;
 }
-.section-outlay .outlay__wrapper .section-outlay__description .section-outlay__advantages {
+.section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__description .section-outlay__advantages {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -2686,7 +2691,7 @@ body {
   flex-wrap: nowrap;
   gap: 9px 0;
 }
-.section-outlay .outlay__wrapper .section-outlay__description .section-outlay__advantages .advantages-list__elem {
+.section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__description .section-outlay__advantages .advantages-list__elem {
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -2694,25 +2699,24 @@ body {
   flex-wrap: nowrap;
   gap: 0 11px;
 }
-.section-outlay .outlay__wrapper .section-outlay__description .section-outlay__advantages .advantages-list__elem .advantages-elem__text {
+.section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__description .section-outlay__advantages .advantages-list__elem .advantages-elem__text {
   font-size: 11px;
   font-weight: 400;
   line-height: 13px;
   color: #494b50;
 }
-.section-outlay .outlay__wrapper .section-outlay__description .section-outlay__advantages .advantages-list__elem .advantages-elem__text-mark {
+.section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__description .section-outlay__advantages .advantages-list__elem .advantages-elem__text-mark {
   font-weight: 700;
 }
-.section-outlay .outlay__wrapper .section-outlay__card {
+.section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__card {
   padding: 39px 54px 38px 54px;
-  z-index: 1;
 }
 @media screen and (max-width: 420px) {
-  .section-outlay .outlay__wrapper .section-outlay__card {
+  .section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__card {
     padding: 39px 24px 38px 24px;
   }
 }
-.section-outlay .outlay__wrapper .section-outlay__card .outlay-card__title {
+.section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__card .outlay-card__title {
   font-size: 18px;
   font-weight: 700;
   line-height: 18px;
@@ -2720,7 +2724,7 @@ body {
   color: #262425;
   margin-bottom: 10px;
 }
-.section-outlay .outlay__wrapper .section-outlay__card .outlay-card__description {
+.section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__card .outlay-card__description {
   font-size: 13px;
   font-weight: 400;
   line-height: 14px;
@@ -2728,7 +2732,7 @@ body {
   color: #4c4f56;
   margin-bottom: 12px;
 }
-.section-outlay .outlay__wrapper .section-outlay__card .outlay-form {
+.section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__card .outlay-form {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -2736,14 +2740,14 @@ body {
   flex-wrap: nowrap;
   gap: 10px 0;
 }
-.section-outlay .outlay__wrapper .section-outlay__card .outlay-form .outlay-card__description-mark {
+.section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__card .outlay-form .outlay-card__description-mark {
   font-size: 13px;
   font-weight: 700;
   text-align: center;
   color: #262425;
   margin-bottom: 4px;
 }
-.section-outlay .outlay__wrapper .section-outlay__card .outlay-form__label {
+.section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__card .outlay-form__label {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -2754,15 +2758,15 @@ body {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
-.section-outlay .outlay__wrapper .section-outlay__card .outlay-form__input-radio {
+.section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__card .outlay-form__input-radio {
   display: none;
 }
-.section-outlay .outlay__wrapper .section-outlay__card .outlay-form__input-radio[type=radio]:checked + .outlay-form__label {
+.section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__card .outlay-form__input-radio[type=radio]:checked + .outlay-form__label {
   box-shadow: 0px 4.1px 27.35px 0px rgba(28, 24, 31, 0.2);
   border-radius: 5px;
   font-weight: 700;
 }
-.section-outlay .outlay__wrapper .section-outlay__card .outlay-form__radio {
+.section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__card .outlay-form__radio {
   display: flex;
   flex-direction: row;
   justify-content: start;
@@ -2771,15 +2775,15 @@ body {
   gap: 0 9px;
   margin-bottom: 15px;
 }
-.section-outlay .outlay__wrapper .section-outlay__card .outlay-form__label {
+.section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__card .outlay-form__label {
   font-size: 14px;
   font-weight: 400;
   color: #706f75;
 }
-.section-outlay .outlay__wrapper .section-outlay__card .outlay-form__input-file {
+.section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__card .outlay-form__input-file {
   display: none;
 }
-.section-outlay .outlay__wrapper .section-outlay__card .outlay-form__file-label {
+.section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__card .outlay-form__file-label {
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -2792,7 +2796,7 @@ body {
   margin-bottom: 13px;
   margin-bottom: 3px;
 }
-.section-outlay .outlay__wrapper .section-outlay__card .outlay-form__input-tel {
+.section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__card .outlay-form__input-tel {
   background-color: #efefef;
   border-radius: 5px;
   padding: 12px 13px 6px 13px;
@@ -2803,17 +2807,17 @@ body {
   font-weight: 400;
   color: #7a7d81;
 }
-.section-outlay .outlay__wrapper .section-outlay__card .outlay-form__input-tel::-moz-placeholder {
+.section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__card .outlay-form__input-tel::-moz-placeholder {
   font-size: 21px;
   font-weight: 400;
   color: #7a7d81;
 }
-.section-outlay .outlay__wrapper .section-outlay__card .outlay-form__input-tel::placeholder {
+.section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__card .outlay-form__input-tel::placeholder {
   font-size: 21px;
   font-weight: 400;
   color: #7a7d81;
 }
-.section-outlay .outlay__wrapper .section-outlay__card .outlay-form__button {
+.section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__card .outlay-form__button {
   font-size: 14px;
   font-weight: 700;
   color: #fcfcfe;
@@ -2824,14 +2828,14 @@ body {
   margin-bottom: 2px;
   cursor: pointer;
 }
-.section-outlay .outlay__wrapper .section-outlay__card .outlay-form__conf {
+.section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__card .outlay-form__conf {
   font-size: 10px;
   font-weight: 300;
   line-height: 11px;
   color: #413e3f;
   margin-right: 15px;
 }
-.section-outlay .outlay__wrapper .section-outlay__card .outlay-form__conf .outlay-conf__link {
+.section-outlay .outlay__wrapper .section-outlay__inner .section-outlay__card .outlay-form__conf .outlay-conf__link {
   font-weight: 600;
   text-decoration: underline;
   color: #413e3f;
@@ -2840,15 +2844,15 @@ body {
   position: absolute;
   top: -175px;
   left: -150px;
-  z-index: -1;
 }
 .section-outlay__divider {
   position: absolute;
-  bottom: -14%;
+  bottom: 0px;
+  right: 0px;
+  bottom: -20%;
   right: 10%;
-  z-index: 0;
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 750px) {
   .section-outlay__divider {
     bottom: -10%;
   }
