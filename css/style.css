@@ -636,14 +636,14 @@ body {
   z-index: 1;
   width: 15%;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1250px) {
   .main__right-tree {
-    bottom: -250px;
+    bottom: -220px;
   }
 }
 @media screen and (max-width: 420px) {
   .main__right-tree {
-    bottom: -290px;
+    bottom: -250px;
   }
 }
 .main__left-tree {
