@@ -430,7 +430,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  align-items: end;
+  align-items: start;
   flex-wrap: nowrap;
   gap: 5px 0;
 }
@@ -456,9 +456,9 @@ body {
   font-size: 12px;
   font-weight: 600;
   color: #87bf3c;
-  -webkit-text-decoration: dashed;
-          text-decoration: dashed;
-  text-decoration-color: #87bf3c;
+  -webkit-text-decoration: underline dotted #87bf3c;
+          text-decoration: underline dotted #87bf3c;
+  line-height: 13px;
 }
 .main .header__navigation-list {
   display: flex;
