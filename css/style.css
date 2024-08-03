@@ -638,12 +638,7 @@ body {
 }
 @media screen and (max-width: 1250px) {
   .main__right-tree {
-    bottom: -220px;
-  }
-}
-@media screen and (max-width: 420px) {
-  .main__right-tree {
-    bottom: -250px;
+    bottom: -25%;
   }
 }
 .main__left-tree {

@@ -383,16 +383,13 @@
   &__right-tree {
     position: absolute;
     right: 0px;
+
     bottom: -380px;
     z-index: 1;
     width: 15%;
 
     @media screen and (max-width: 1250px) {
-      bottom: -220px;
-    }
-
-    @media screen and (max-width: 420px) {
-      bottom: -250px;
+      bottom: -25%;
     }
   }
 
