@@ -219,9 +219,6 @@ body {
   margin-bottom: 85px;
   padding-top: 26px;
   box-sizing: border-box;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .main .header__burger {
   display: none;
@@ -646,7 +643,7 @@ body {
 }
 @media screen and (max-width: 420px) {
   .main__right-tree {
-    bottom: -320px;
+    bottom: -290px;
   }
 }
 .main__left-tree {
