@@ -391,6 +391,10 @@
     @media screen and (max-width: 1250px) {
       bottom: -25%;
     }
+
+    @media screen and (max-width: 420px) {
+      bottom: -25%;
+    }
   }
 
   &__left-tree {
@@ -2441,8 +2445,8 @@
 }
 
 .footer {
-  background-color: #373739;
   padding: 34px 81px 32px 81px;
+  background-color: #373739;
 
   @media screen and (max-width: 750px) {
     padding: 34px 16px 32px 16px;

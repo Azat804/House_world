@@ -641,6 +641,11 @@ body {
     bottom: -25%;
   }
 }
+@media screen and (max-width: 420px) {
+  .main__right-tree {
+    bottom: -25%;
+  }
+}
 .main__left-tree {
   position: absolute;
   left: -40px;
@@ -2972,8 +2977,8 @@ body {
 }
 
 .footer {
-  background-color: #373739;
   padding: 34px 81px 32px 81px;
+  background-color: #373739;
 }
 @media screen and (max-width: 750px) {
   .footer {
